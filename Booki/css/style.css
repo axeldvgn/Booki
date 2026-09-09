@@ -50,6 +50,15 @@ a {
     font-size: 16px;
 }
 
+.card-content {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
 .euro {
     font-weight: 700;
 }
@@ -98,6 +107,11 @@ nav {
 .logo img {
     height: 20px;
     width: auto;
+}
+
+.titre {
+    margin: 0px;
+    margin-top: 20px;
 }
 
 .recherche {
@@ -228,15 +242,6 @@ nav {
     border-bottom-left-radius: 20px;
 }
 
-.populaires-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
@@ -252,7 +257,7 @@ nav {
 
 /****** Activités ***********/
 .activites {
-    width: 65%;
+    width: 100%;
     margin-top: 50px;
 }
 
@@ -271,11 +276,17 @@ nav {
 }
 
 .activites-cards img {
-    width: 200px;
+    width: 100%;
     height: 300px;
     border-radius: 20px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+}
+
+.activites a {
+    width: calc(25% - 15px);
+    border-radius: 20px;
+    border: 2px solid var(--main-bg-color);
 }
 
 /****** Footer ***********/
@@ -283,6 +294,7 @@ footer {
     background-color: var(--main-bg-color);
     padding: 0px 50px;
     box-sizing: border-box;
+    margin-top: 50px;
 }
 
 .footer-content {
@@ -324,6 +336,9 @@ footer {
         width: 100%;
     }
 
+    .hebergements-cards {
+    grid-template-columns: repeat(3, 1fr);
+    }
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -339,12 +354,31 @@ footer {
         width: 30%;
     }
 
-    .populaires-cards .card-title {
+    .card-title {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .card-subtitle {
         font-size: 13px;
+    }
+
+    .activites {
+        width: 100%;
+    }
+
+    .activites-cards img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .filtre {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .filtre-liens {
+        flex-wrap: wrap;
+        gap: 15px;
     }
 }
 
