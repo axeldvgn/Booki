@@ -162,6 +162,7 @@ nav {
     font-weight: 700;
     border: 1px solid var(--main-bg-color);
     padding: 0px 15px;
+    outline: none;
 }
 
 .button {
@@ -234,7 +235,6 @@ nav {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-    margin-top: 20px;
 }
 
 .hebergements-title {
@@ -619,6 +619,16 @@ footer {
 
     .populaires-cards a {
         width: 100%;
+    }
+
+    .hebergements {
+        margin-top: 20px;
+    }
+
+    .hebergements footer{
+        margin: 0px;
+        background-color: white;
+        padding: 0px;
     }
 
     .hebergements-cards {
