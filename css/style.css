@@ -139,7 +139,6 @@ nav {
     background-color: var(--main-bg-color);
     padding: 0px 0px 0px 15px;
     height: 40px;
-    overflow: var(--main-color);
 }
 
 .search i {
